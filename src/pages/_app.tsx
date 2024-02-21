@@ -6,8 +6,8 @@ import ContextProvider from "./ContextProvider";
 
 
 export default function App({ Component, pageProps }: AppProps) {
-
+return (
   <ContextProvider>
-    return <Component {...pageProps} />;
-  </ContextProvider>;
+    <Component {...pageProps} />;
+  </ContextProvider>)
 }
